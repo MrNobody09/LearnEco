@@ -5,15 +5,14 @@ Phase 0 — Project Foundation + Tool Integration
 
 ## Completed
 - 0A: Information model agreed.
+- 0B: GitHub foundation created and bootstrapped.
+- 0C: ChatGPT can read from and write to the repository through a branch and pull-request workflow.
 - GitHub repository created as `MrNobody09/LearnEco`.
 - Repository is public.
 - Default branch is `main`.
-- ChatGPT can read the repository.
-- Bootstrap branch created: `chore/bootstrap-foundation`.
 
 ## In progress
-- 0B: GitHub foundation bootstrap.
-- 0C: Verify ChatGPT write workflow through a branch and pull request.
+- None.
 
 ## Not started
 - 0D: Connect Codex to the same repository.
@@ -28,4 +27,4 @@ Phase 0 — Project Foundation + Tool Integration
 - Chat is for exploration and discussion; finalized project truth must be persisted in the repository.
 
 ## Next approved step
-Complete the bootstrap pull request and verify the ChatGPT → GitHub write/review loop before connecting Codex.
+Connect Codex to `MrNobody09/LearnEco` and verify that a fresh Codex session can read the repository context before making any implementation changes.
