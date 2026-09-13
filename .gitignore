@@ -1,0 +1,38 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# NotebookLM / Google auth and session material
+.notebooklm/
+notebooklm_auth.json
+cookies.json
+*.cookies.json
+session.json
+*.session.json
+sessions/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / local runtime data
+*.log
+logs/
+data/
