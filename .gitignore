@@ -12,8 +12,11 @@ credentials/
 # NotebookLM / Google auth and session material
 .notebooklm/
 notebooklm_auth.json
-*cookie*
-*session*
+cookies.json
+*.cookies.json
+session.json
+*.session.json
+sessions/
 
 # Python
 __pycache__/
