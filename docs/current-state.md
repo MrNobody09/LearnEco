@@ -1,7 +1,7 @@
 # Current State
 
 ## Phase
-Phase 0 — Project Foundation + Tool Integration
+Phase 0 — Project Foundation + Tool Integration (complete)
 
 ## Completed
 - 0A: Information model agreed.
@@ -21,6 +21,12 @@ Phase 0 — Project Foundation + Tool Integration
 - 0G: Discussion → decision → task → implementation workflow finalized.
   - `docs/workflow.md` defines how discussions become approved repository truth, when GitHub Issues are created, issue readiness, bounded Codex tasks, branch/PR workflow, review, and completion/cleanup.
   - `AGENTS.md` points Codex to the workflow for tracked implementation work and project workflow changes.
+- 0H: End-to-end operating-model test completed successfully.
+  - GitHub Issue #6 defined a bounded repository health-check task with clear scope, acceptance criteria, relevant context, and constraints.
+  - Codex implemented the task from the persistent local repository on a short-lived branch, added tests, ran checks, pushed the branch, and opened PR #7.
+  - ChatGPT independently reviewed PR #7 against Issue #6 and the repository rules before merging it.
+  - PR #7 merged successfully and automatically closed Issue #6.
+  - The test proved the agreed ChatGPT → GitHub → Codex → GitHub → ChatGPT workflow without relying on prior Codex chat memory.
 - GitHub repository created as `MrNobody09/LearnEco`.
 - Repository is public.
 - Default branch is `main`.
@@ -29,7 +35,7 @@ Phase 0 — Project Foundation + Tool Integration
 - None.
 
 ## Not started
-- 0H: Run a dummy end-to-end operating-model test.
+- Phase 1: Define LearnEco product scope.
 
 ## Current constraints
 - Repository is public; secrets, authentication material, private learning content, cookies, tokens, and session files must never be committed.
@@ -41,4 +47,4 @@ Phase 0 — Project Foundation + Tool Integration
 - Tracked work and implementation flow must follow `docs/workflow.md`, with bounded tasks, short-lived branches, pull-request review, and explicit completion.
 
 ## Next approved step
-Run 0H: a harmless end-to-end operating-model test that exercises the agreed flow from discussion/decision through GitHub work tracking, Codex implementation, review, merge, state update, and cleanup.
+Begin Phase 1 by defining LearnEco product scope before creating product requirements, architecture, or implementation work.
