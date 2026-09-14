@@ -12,6 +12,9 @@ Phase 0 — Project Foundation + Tool Integration
   - Local Git can communicate with `origin` at `MrNobody09/LearnEco`.
   - Codex opened the real local repository, read `AGENTS.md` and `docs/current-state.md`, created a controlled test branch, committed one test file, and pushed it to GitHub.
   - ChatGPT independently verified the pushed commit from GitHub.
+- 0E: Persistent Codex context model finalized.
+  - `AGENTS.md` now defines required startup reads, the repository context map, conditional-reading behaviour, conflict/precedence rules, local workspace expectations, and change/workflow rules.
+  - Fresh Codex sessions are expected to recover project context from the repository rather than from chat history or prior session memory.
 - GitHub repository created as `MrNobody09/LearnEco`.
 - Repository is public.
 - Default branch is `main`.
@@ -20,7 +23,6 @@ Phase 0 — Project Foundation + Tool Integration
 - None.
 
 ## Not started
-- 0E: Finalize persistent Codex context.
 - 0F: Finalize documentation/update rules.
 - 0G: Define the discussion → decision → task → implementation workflow.
 - 0H: Run a dummy end-to-end operating-model test.
@@ -30,6 +32,7 @@ Phase 0 — Project Foundation + Tool Integration
 - GitHub is the project system of record for approved requirements, decisions, architecture, status, code, and implementation work.
 - Chat is for exploration and discussion; finalized project truth must be persisted in the repository.
 - Codex must operate from the persistent local repository at `C:\Projects\LearnEco`; GitHub API access alone is not equivalent to a valid local development workspace.
+- Codex must use repository documentation as authoritative context and surface material conflicts instead of resolving them by guesswork.
 
 ## Next approved step
-Finalize persistent Codex context in 0E so fresh Codex sessions consistently recover the required project context from the repository before making changes.
+Finalize documentation/update rules in 0F so it is clear which repository artifacts are updated for each type of project change and who is responsible for those updates.
