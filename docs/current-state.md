@@ -18,6 +18,9 @@ Phase 0 — Project Foundation + Tool Integration
 - 0F: Documentation/update rules finalized.
   - `docs/documentation-rules.md` defines which artifact is authoritative for each change type, ownership between ChatGPT and Codex, ADR/current-state rules, and when documentation updates are unnecessary.
   - `AGENTS.md` points Codex to these rules when work may materially change project truth or status.
+- 0G: Discussion → decision → task → implementation workflow finalized.
+  - `docs/workflow.md` defines how discussions become approved repository truth, when GitHub Issues are created, issue readiness, bounded Codex tasks, branch/PR workflow, review, and completion/cleanup.
+  - `AGENTS.md` points Codex to the workflow for tracked implementation work and project workflow changes.
 - GitHub repository created as `MrNobody09/LearnEco`.
 - Repository is public.
 - Default branch is `main`.
@@ -26,7 +29,6 @@ Phase 0 — Project Foundation + Tool Integration
 - None.
 
 ## Not started
-- 0G: Define the discussion → decision → task → implementation workflow.
 - 0H: Run a dummy end-to-end operating-model test.
 
 ## Current constraints
@@ -36,6 +38,7 @@ Phase 0 — Project Foundation + Tool Integration
 - Codex must operate from the persistent local repository at `C:\Projects\LearnEco`; GitHub API access alone is not equivalent to a valid local development workspace.
 - Codex must use repository documentation as authoritative context and surface material conflicts instead of resolving them by guesswork.
 - Documentation updates must follow `docs/documentation-rules.md`, using the smallest authoritative artifact and avoiding duplicate project truth.
+- Tracked work and implementation flow must follow `docs/workflow.md`, with bounded tasks, short-lived branches, pull-request review, and explicit completion.
 
 ## Next approved step
-Define the discussion → decision → task → implementation workflow in 0G, including how approved discussion outcomes become repository updates, GitHub work items, Codex tasks, reviews, and completed project state.
+Run 0H: a harmless end-to-end operating-model test that exercises the agreed flow from discussion/decision through GitHub work tracking, Codex implementation, review, merge, state update, and cleanup.
