@@ -12,11 +12,13 @@ Before making changes:
 2. Read the task prompt or issue.
 3. Read only the relevant product, specification, architecture, ADR, source-code, and test files needed for that task.
 4. Read `docs/documentation-rules.md` when a task may materially change project truth or status.
-5. Do not treat Codex chat history, ChatGPT chat history, or prior session memory as authoritative when repository documentation exists.
+5. Read `docs/workflow.md` when the task involves tracked implementation work, pull requests, or workflow state changes.
+6. Do not treat Codex chat history, ChatGPT chat history, or prior session memory as authoritative when repository documentation exists.
 
 ## Repository context map
 - Current project state: `docs/current-state.md`
 - Documentation ownership/update rules: `docs/documentation-rules.md`
+- Operating workflow: `docs/workflow.md`
 - Product requirements and scope: `docs/product.md` when it exists
 - Architecture and integration design: `docs/architecture.md` when it exists
 - Significant approved decisions and rationale: `docs/decisions/`
@@ -36,6 +38,7 @@ Use this map to retrieve context on demand. Do not preload unrelated documentati
 
 ## Change rules
 - Follow `docs/documentation-rules.md` for documentation ownership and update requirements.
+- Follow `docs/workflow.md` for discussion → decision → task → implementation → review → completion flow.
 - ChatGPT is the primary owner of approved project truth; Codex is the primary owner of implementation.
 - Codex must not silently change product or architecture intent.
 - Do not implement behaviour that conflicts with an approved requirement or decision.
